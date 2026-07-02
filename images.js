@@ -3,14 +3,14 @@
 const dressImages = [
     {
         id: 1,
-        title: "فستان الأميرات",
+        title: "فستان وردي بفتحت ظهر خلفية",
         price: "350 ر.س",
         category: "wedding",
         src: "https://j.top4top.io/p_38267vpy11.jpg"
     },
     {
         id: 2,
-        title: "فستان العيد التركي بنقوش الورد",
+        title: "فستان سكري بفتحت ظهر خلفي",
         price: "350 ر.س",
         category: "eid",
         src: "https://h.top4top.io/p_3826laxaq1.jpg"
