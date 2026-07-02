@@ -70,12 +70,11 @@
             <div class="logo">بنتي <span>تالين</span></div>
             <div style="display: flex; align-items: center; gap: 30px;">
                 <ul class="nav-links">
-                    <li><a href="index.html#hero">الرئيسية</a></li>
-                    <li><a href="index.html#categories">التصنيفات</a></li>
-                    <li><a href="index.html#gallery">المعرض</a></li>
-                    <li><a href="index.html#why-us">لماذا نحن</a></li>
-                    <li><a href="index.html#reviews">الآراء</a></li>
-                    <li><a href="index.html#map">الموقع</a></li>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#categories">التصنيفات</a></li>
+                    <li><a href="#why-us">لماذا نحن</a></li>
+                    <li><a href="#reviews">الآراء</a></li>
+                    <li><a href="#map">الموقع</a></li>
                 </ul>
                 <a href="https://www.tiktok.com/@akikeno?_r=1&_t=ZS-97UPNBqDFsD" target="_blank" rel="noopener noreferrer" class="header-tiktok" aria-label="تيك توك بنتي تالين" title="تابعنا على TikTok">
                     <div class="header-tiktok-icon">
@@ -88,6 +87,24 @@
             </div>
         </div>
     </header>
+
+    <section id="hero" class="hero">
+        <div class="circle-bg" style="width: 100px; height: 100px; top: 15%; right: 10%;"></div>
+        <div class="circle-bg" style="width: 150px; height: 150px; bottom: 10%; left: 5%; animation-delay: 2s;"></div>
+        
+        <div class="container">
+            <img src="https://a.top4top.io/p_3829l1ged1.jpg" alt="بنتي تالين - صورة المتجر" class="hero-img" loading="lazy">
+            <h1>أناقة صغيرة... <br><span>بتفاصيل كبيرة</span></h1>
+            <p>تشكيلة مميزة وفاخرة من فساتين البنات للمناسبات والأفراح والأعياد بأحدث الموديلات داخل مارينا مول.</p>
+            
+            <div class="hero-btns">
+                <a href="#categories" class="btn btn-gold-outline">تصفح التصنيفات</a>
+                <a href="https://wa.me/966562399039?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A8%D9%86%D8%AA%D9%8A%20%D8%AA%D8%A7%D9%84%D9%8A%D9%86%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86" target="_blank" class="btn btn-whatsapp">
+                    تواصل واتساب مباشر
+                </a>
+            </div>
+        </div>
+    </section>
 
     <section class="stats">
         <div class="container stats-grid">
@@ -132,7 +149,7 @@
                         <h3>موديلات ناعمة ويومية</h3>
                     </div>
                 </div>
-                <div class="cat-card" onclick="window.location.href='index.html#gallery'">
+                <div class="cat-card" onclick="window.location.href='index.html#categories'">
                     <img src="https://e.top4top.io/p_38295d5wq1.jpg" alt="كل الفساتين" loading="lazy">
                     <div class="cat-overlay">
                         <h3>كل التشكيلة</h3>
@@ -146,34 +163,9 @@
         <div class="season-box">
             <h2 style="font-family: 'Cairo', sans-serif; font-size: 2rem; margin-bottom: 15px; color: var(--text-dark);">تشكيلة صيف 2026 الحصرية</h2>
             <p style="font-size: 1.1rem; color: #555; margin-bottom: 25px;">وصلتنا حديثاً أحدث التصاميم التركية والعالمية لفساتين البنات بألوان مبهجة وخامات مريحة جداً تناسب طفلتك.</p>
-            <a href="index.html#gallery" class="btn btn-white" style="font-weight: 700; color: var(--gold-dark);">رؤية الموديلات بالأسعار</a>
+            <a href="#categories" class="btn btn-white" style="font-weight: 700; color: var(--gold-dark);">استكشفي التشكيلة الآن</a>
         </div>
     </section>
-
-    <section id="gallery" class="gallery-section">
-        <div class="container">
-            <h2 class="section-title">معرض الفساتين الحالية</h2>
-            <p style="text-align: center; margin-top: -40px; margin-bottom: 40px; color: #777;">اضغطي على أي فستان لرؤية التفاصيل الكاملة وزر الطلب المباشر عبر واتساب</p>
-            
-            <div class="masonry-gallery" id="galleryContainer">
-                </div>
-        </div>
-    </section>
-
-    <div class="lightbox" id="lightbox">
-        <div class="lightbox-content">
-            <button class="lightbox-close" onclick="closeLightbox()">❌</button>
-            <img src="" alt="معاينة الفستان" class="lightbox-img" id="lightboxImg">
-            <div class="lightbox-details">
-                <h3 id="lightboxTitle" style="font-family: 'Cairo', sans-serif; font-size: 1.4rem;">اسم الفستان</h3>
-                <div class="lightbox-price" id="lightboxPrice">000 ر.س</div>
-                <div class="lightbox-status">✓ متوفر حالياً في المتجر (مارينا مول)</div>
-                <a href="" target="_blank" class="btn btn-whatsapp" id="lightboxOrderBtn" style="width: 100%;">
-                    طلب الفستان عبر واتساب مباشر
-                </a>
-            </div>
-        </div>
-    </div>
 
     <section id="why-us" class="why-us">
         <div class="container">
