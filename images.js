@@ -34,7 +34,7 @@ const dressImages = [
         title: "فستان",
         price: "340 ر.س",
         category: "eid",
-        src: "https://k.top4top.io/p_3829ica871.jpg"
+        src: " "
     },
     {
         id: 6,
