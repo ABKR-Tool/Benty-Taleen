@@ -105,3 +105,61 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+// ===== إضافة جديدة في نهاية الملف =====
+
+/**
+ * دالة تهيئة الصفحة حسب نوعها
+ * @param {string} pageType - نوع الصفحة ('home', 'wedding', 'eid', 'soft')
+ */
+function initPage(pageType) {
+    // إخفاء قسم التصنيفات في الصفحات الداخلية
+    const categorySection = document.getElementById('categories');
+    if (categorySection && pageType !== 'home') {
+        categorySection.style.display = 'none';
+    }
+
+    // عرض المعرض مع التصفية حسب نوع الصفحة
+    switch(pageType) {
+        case 'home':
+            renderGallery('all');
+            document.title = 'بنتي تالين - فساتين بنات مارينا مول';
+            break;
+        case 'wedding':
+            renderGallery('wedding');
+            document.title = 'بنتي تالين - فساتين أفراح ومناسبات';
+            updateHeroText('فساتين الأفراح والمناسبات', 'أجمل التصاميم الفاخرة لمناسبات طفلتك');
+            break;
+        case 'eid':
+            renderGallery('eid');
+            document.title = 'بنتي تالين - فساتين أعياد';
+            updateHeroText('فساتين الأعياد السعيدة', 'تشكيلة مميزة لأجمل أيام العيد');
+            break;
+        case 'soft':
+            renderGallery('soft');
+            document.title = 'بنتي تالين - موديلات ناعمة';
+            updateHeroText('الموديلات الناعمة', 'أناقة يومية بتفاصيل راقية');
+            break;
+        default:
+            renderGallery('all');
+    }
+}
+
+/**
+ * دالة تحديث النصوص في قسم الهيرو
+ * @param {string} title - العنوان الجديد
+ * @param {string} description - الوصف الجديد
+ */
+function updateHeroText(title, description) {
+    const heroTitle = document.querySelector('.hero h1');
+    const heroDesc = document.querySelector('.hero p');
+    const heroSpan = document.querySelector('.hero h1 span');
+    
+    if (heroTitle) {
+        heroTitle.innerHTML = `${title}<br><span>تشكيلة حصرية</span>`;
+    }
+    if (heroDesc) {
+        heroDesc.textContent = description;
+    }
+}
+
+// ===== نهاية الإضافات الجديدة =====
