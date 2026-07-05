@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abkr-tool.github.io/Benty-Taleen/sitemap.xml
