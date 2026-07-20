@@ -73,7 +73,14 @@ const dressImages = [
         src: "https://d.top4top.io/p_3829qwqqs1.jpg"
     },
     {
-        id: 11,
+    id: 11,
+        title: "فستان جديد",
+        price: "عرض خاص ر.س",
+        category: "soft",
+        src: "https://e.top4top.io/p_3853yis4w1.jpg"
+    },      
+    {
+        id: 12,
         title: "فستان زفاف بقصة أطفال أنيقة",
         price: "280 ر.س",
         category: "eid",
